@@ -1,0 +1,304 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* body */
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-color: rgb(245, 215, 20); */
+   
+}
+
+/* header section */
+header{
+    width: 100%;
+    height: 95 vh ;
+    /* border: 1px solid black ; */
+    
+    margin: auto;
+    
+    /* background: rgb(125, 125, 125); */
+}
+
+/* navbar */
+header nav{
+    width: 100%;
+    height: 15%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    padding-left: 3px;
+    /* padding-right: 0px; */
+    align-items: center;
+    
+    justify-content: space-between;
+}
+header nav:hover{
+    background-color: black;
+    color: #fff;
+}
+
+/* setting the list elements */
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    padding: 3px 8px;
+} 
+
+
+/* setting anchor tag */
+header nav ul li a{
+    text-decoration: none;
+    font-size:92% ;
+    font-weight:500 ;
+    transition: 0.5s;
+    color: #807e7e;
+}
+
+header nav ul li a:hover{
+    color: #fff;
+
+}
+
+/* header section : home view */
+header .head{
+    margin: auto;
+    position: relative;
+    width: 100% ;
+    height: 88.35vh;
+    color: black;
+    /* border: 1px solid black;  */
+     /* border-radius: 1%; */
+    display: flex;
+    background: #fff;
+    
+}
+
+/* landing page first view section */
+header .intro{
+    width: 40% ;
+    height:88.35vh ;
+    /* border: 1px solid black; */
+    /* border-radius: 5%; */
+}
+
+header .intro h1{
+    margin-left: 20px;
+    font-size: 50px;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+header .intro p{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+/* header pictures */
+header .pics{
+    margin-top: 65px;
+    margin-left: 70px;
+    width: 50% ;
+    height: 65vh ;
+    border: 1px solid black;
+    border-radius: 2%;
+    color: white;
+    background: url(images/pic1.png) no-repeat center center/cover;
+   
+}
+
+
+
+/* about us section setup */
+#about_us{
+    width: 100%;
+    height: 60 vh;
+    margin: auto;
+    /* border: 1px solid black; */
+    /* display: flex; */
+}
+
+#about_us .title{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#about_us .title h4{
+    text-decoration-line: underline;
+}
+
+#about_us .info{
+    display: flex;
+}
+
+#about_us .info .about-us1{
+    width: 40%;
+    height: 60vh;
+    margin: auto;
+    text-align: left;
+    vertical-align: middle;
+    line-break: anywhere;
+    /* border: 1px solid black; */
+}
+
+#about_us .info .vertical_line{
+    width: 1px;
+    background-color: #000;
+    /* height: 100%; */
+    float: left;
+}
+
+/* gallery*/
+#gallery {
+    width: 100%;
+    height: 60 vh;
+    margin: auto;
+    /* border: 1px solid #000; */
+    /* display: flex; */
+    background-color: black;
+    
+    
+}
+
+#gallery .title{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+#gallery .title h4{
+    text-decoration-line: underline;
+}
+
+#gallery .pictures {
+    display: flex;
+}
+
+#gallery .pictures {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the minmax values and column count as needed */
+    gap: 10px; /* Adjust the gap between images */
+  }
+  
+#gallery .pictures .gallery-item img{
+    max-width: 100%;
+    height: auto; /* Maintain image aspect ratio */
+}
+
+/* OUR TEAM */
+#team{
+    width: 100%;
+    height: 60 vh;
+    margin: auto;
+    /* border: 1px solid black; */
+    /* display: flex; */
+}
+
+#team .title{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+}
+
+#team .title h4{
+    text-decoration-line: underline;
+}
+
+#team .our-team1 img{
+    width: 100%;
+    /* height: 80%; */
+}
+
+#team .our-team2 img{
+    width: 100%;
+    /* height: 80%; */
+}
+
+#team .our-team1{
+    margin: 10px 250px ;
+    /* padding: 10px 30px; */
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+#team .our-team1 .mem_info{
+    text-align: center;
+  /* padding: 10px 20px; */
+}
+
+#team .position {
+    display: flex;
+}
+#team .our-team2{
+    margin: 10px 250px ;
+    /* padding: 10px 30px; */
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+#team .our-team2 .mem_info{
+    text-align: center;
+  /* padding: 10px 20px; */
+}
+
+/* testimonial */
+#testimonial{
+    width: 100%;
+    height: 60 vh;
+    margin: auto;
+    border: 1px solid black;
+    /* display: flex; */
+}
+
+#testimonial .title{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+}
+
+#testimonial .title h4{
+    text-decoration-line: underline;
+}
+
+#testimonial .test {
+    display: flex;
+}
+
+#testimonial .test1{
+    margin: 5px 5px;
+    border: 1px solid black;
+    width: 60vh;
+    height: 60vh;
+    margin: auto;
+}
+
+/* contact us */
+#contact-us{
+    width: 100%;
+    height: 60 vh;
+    margin: auto;
+    border: 1px solid #fff;
+    display: flex;
+    background-color: black;
+    color: #fff;
+}
+#contact-us .sec1{
+    margin: 5px 5px;
+    border: 1px solid black;
+    width: 60vh;
+    height: 60vh;
+    margin: auto;
+}
