@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Main Container */
+  #main {
+    width: 100vw;
+    background: black;
+    color: white;
+  }
+  
+  /* navbar */
+  nav {
+    width: 100%;
+    height: 10vh;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 100px;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  nav h1 {
+    font-size: 30px;
+  }
+  
+  /* setting the list elements */
+  nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 2px solid grey;
+  }
+  
+  /* setting anchor tag */
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  /* Header Section */
+  .header {
+    padding-top: 70px;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    margin-bottom: 80px;
+    background: white;
+    color: black;
+  }
+  
+  .header div {
+    width: 50%;
+  }
+  .intro {
+    padding: 50px 30px 0 50px;
+  }
+  
+  .intro h1 {
+    font-size: 50px;
+  }
+  .intro hr {
+    margin: 20px 0 20px 0;
+  }
+  .intro p {
+    margin-top: 40px;
+    word-spacing: 5px;
+    line-height: 35px;
+    font-size: 18px;
+  }
+  
+  /* header pictures */
+  .pics {
+    border: 2px solid grey;
+    margin: 100px;
+    border-radius: 4px;
+  }
+  
+  .pics div {
+    width: 100%;
+    height: 100%;
+    margin: 3px;
+    border-radius: 4px;
+    border: 2px solid black;
+    background-image: url(images/pic1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* about us section setup */
+  #about_us {
+    width: 100%;
+    height: 80vh;
+    /* border: 2px solid black; */
+  }
+  
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .info {
+    /* margin: 100px 0 50px 50px; */
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .info div {
+    width: 40%;
+    font-size: 18px;
+    word-spacing: 3px;
+  }
+  
+  /* Gallery Section */
+  
+  #gallery {
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid wheat; */
+    height: 160vh;
+    background: #000;
+  }
+  
+  /* Heading */
+  #gallery h3 {
+    margin: 30px;
+  }
+  
+  /* GRID  */
+  .gallery-item {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 6px;
+    column-gap: 6px;
+    background-image: radial-gradient(gold, orange, black, white);
+  }
+  
+  .gallery-item div:hover {
+    cursor: pointer;
+    transform: scale(0.96);
+    transition: all 0.6s ease-in-out;
+  }
+  .gallery-item div img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Team Section*/
+  #team {
+    width: 100%;
+    height: 60vh;
+    background: white;
+    color: black;
+    padding-top: 30px;
+  }
+  
+  .Members {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Members div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 30%;
+    height: 50vh;
+    /* border: 2px solid blue; */
+    background: white;
+    color: black;
+  }
+  
+  /* Footer Section */
+  /* Contact-us */
+  
+  #contact-us {
+    width: 100%;
+    height: 40vh;
+    background: #000;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .footer-container div {
+    width: 30%;
+    height: 60%;
+    border: 1px dashed white;
+  }
+  
+  .first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .second p a {
+    color: white;
+  }
+  
+  /*   Copyright section  */
+  .copyright {
+    text-align: center;
+  }
