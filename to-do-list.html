@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        body {
+            /* font-family: Arial, sans-serif; */
+            /* background-color: #f4f4f4; */
+            background-color: rgb(148, 95, 213);
+            /* background-color: rgb(234, 141, 59); */
+            margin: 0;
+            padding: 0;
+        }
+        #todo-container {
+            width: 60vw;
+            height: auto;
+            /* margin-top: 15px ; */
+            margin: 40px auto;
+            /* max-width: 400px; */
+            /* margin: 0 auto; */
+            background-color: white;
+            border-radius: 5px;
+            /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+            box-shadow: 0 0 5px rgba(10, 6, 6, 0.9);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1{
+            text-align: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            /* #4CAF50 */
+            background-color: rgb(148, 95, 213);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="todo-container">
+        <h1>To-Do List</h1>
+        <input type="text" id="task" placeholder="Add a new task">
+        <button onclick="addTask()">Add</button>
+        <ul id="task-list">
+            <!-- ADDED TASKS WILL APPEAR HERE -->
+        </ul>
+    </div>
+
+    <script>
+        function addTask() {
+            const taskInput = document.getElementById("task");
+            const taskText = taskInput.value.trim();
+
+            if (taskText !== "") {
+                const taskList = document.getElementById("task-list");
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `
+                    <span>${taskText}</span>
+                    <button onclick="removeTask(this)">Delete</button>
+                `;
+                taskList.appendChild(listItem);
+                taskInput.value = "";
+            }
+        }
+
+        function removeTask(button) {
+            const listItem = button.parentNode;
+            const taskList = document.getElementById("task-list");
+            taskList.removeChild(listItem);
+        }
+    </script>
+</body>
+</html>
